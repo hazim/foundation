@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap');
+
+/*
+
+    // <weight>: Use a value from 100 to 800
+
+ .ibm-plex-sans-thin {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: <weight>;
+    font-style: <normal or italic>;
+  }
+
+  .ibm-plex-sans-bold-italic {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+*/
+
+
+/*
+
+// <weight>: Use a value from 100 to 800
+// <width>: Use a value from 75 to 112.5
+
+.martian-mono-<uniquifier> {
+  font-family: "Martian Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" <width>;
+}
+*/
+
+body {
+    background-color: #101920;
+    color: #92673C;
+    font-family: "IBM Plex Sans";
+    line-height: 1.5;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    /* box-sizing: content-box; */
+}
+
+header {
+    padding: 50px 0 40px;
+    background-image: url(original-GAPA3AJBTNAL3QKU6IOO.png);
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 50px;
+    /* border-top-left-radius: 30px; */
+    /* border-top-right-radius: 30px; */
+}
+
+
+h1 {
+    display: inline-block;
+    padding: 20px 20px 25px;
+    background-color: white;
+    font-size: 62px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    letter-spacing: -3px;
+}
+
+h2 {
+    font-size: 33px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 35px 0 25px;
+}
+
+h2,
+ul {
+    margin-left: 50px;
+    /* margin-bottom: 30px; */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+a:hover {
+    padding-bottom: 3px;
+    border-bottom: solid 2px #92673C;
+}
+
+li {
+    font-family: "Martian Mono";
+    margin-bottom: 13px;
+    text-transform: capitalize;
+}
+
+footer {
+    color: #101920;
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: silver;
+    /* position: fixed; */
+    /* width: 100%; */
+    margin: 50px 20px 0;
+    border-radius: 5px;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    header {
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    header h1 {
+        display: block;
+        text-align: center;
+        margin: 0;
+        /* margin: 30px auto; */
+        font-size: 34px;
+        letter-spacing: 0;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h2,
+    ul {
+        margin-left: 20px;
+        /* margin-bottom: 30px; */
+    }
+}

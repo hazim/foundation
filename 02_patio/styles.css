@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.lora-<uniquifier> {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+body {
+    font-family: "lora";
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    background-image: url(assets/background.svg);
+    max-width: 640px;
+    margin: 40px auto;
+}
+
+section {
+    padding: 40px 40px;
+    background-color: #5000ff;
+}
+
+section.image {
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    padding: 40px;
+}
+
+nav {
+    background-color: #f05d5d;
+    padding: 20px 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    padding-bottom: 4px;
+}
+
+nav a.active {
+    color: #5000ff;
+    border-bottom: solid 3px white;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 36px;
+    padding: 40px 0;
+}
+
+img.map {
+    width: 100%;
+}
+
+.contact p {
+    margin-top: 40px;
+}
+
+a.underline {
+    border-bottom: solid 2px #f05d5d;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    padding: 40px;
+    background-color: white;
+}
+
+@media (max-width: 640px) {
+    body {
+        backgroud-color: yellow;
+        width: auto;
+        font-size: 16px;
+        margin: 0 0;
+    }
+
+    header,
+    nav,
+    section {
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav a.active {
+        display: inline-block;
+    }
+
+    h2,
+    blockquote {
+        font-size: 24px;
+    }
+
+    blockquote {
+        padding: 20px 0;
+    }
+
+
+    .contact p {
+        margin-top: 20px;
+    }
+}
