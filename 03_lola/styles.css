@@ -76,6 +76,7 @@ h2 {
 }
 
 .food {
+    display: flex;
     overflow: hidden;
     color: #2F6A49;
     background-color: #FFD400;
@@ -88,7 +89,7 @@ h2 {
 }
 
 .food_info p {
-    /* font-size: 18px; */
+    font-size: 18px;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -98,8 +99,12 @@ p.food_title {
     margin-bottom: 30px;
 }
 
-.food_img {
+div.food_image {
+    float: left;
     width: 50%;
+    background-image: url(assets/blue-bowl.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .quote {
