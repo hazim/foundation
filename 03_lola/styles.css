@@ -74,3 +74,115 @@ h2 {
     font-size: 26px;
     padding-bottom: 75px;
 }
+
+.food {
+    overflow: hidden;
+    color: #2F6A49;
+    background-color: #FFD400;
+}
+
+.food_info {
+    float: left;
+    width: 50%;
+    padding: 60px 80px 50px;
+}
+
+.food_info p {
+    /* font-size: 18px; */
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+p.food_title {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.food_img {
+    width: 50%;
+}
+
+.quote {
+    background-color: #ffd7b3;
+    color: #2F6A49;
+    font-size: 36px;
+    padding: 100px 80px;
+}
+
+.quote p {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+.images {
+    overflow: hidden;
+}
+
+.images img {
+    float: left;
+    width: 33.3%;
+}
+
+.findus {
+    overflow: hidden;
+    background-color: #2F6A49;
+    color: #FFB6C4;
+    font-size: 18px;
+    text-align: center;
+}
+
+.findus div {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+}
+
+.findus p {
+    max-width: 250px;
+    margin: 20px auto;
+}
+
+.findus .map img {
+    border-radius: 50%;
+}
+
+.logos {
+    padding: 40px 20px 100px;
+    text-align: center;
+    color: #FE5504;
+    font-size: 18px;
+}
+
+.logos p {
+    margin-bottom: 50px;
+}
+
+.logos img {
+    padding: 0 25px;
+}
+
+img.short_logo {
+    width: 150px;
+}
+
+img.long_logo {
+    width: 250px;
+}
+
+footer {
+    background-color: #FFB6C4;
+    color: #2F6A49;
+    overflow: hidden;
+    padding: 20px;
+}
+
+footer img {
+    float: left;
+}
+
+footer p {
+    float: right;
+    margin-top: 5px;
+}
