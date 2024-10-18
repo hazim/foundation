@@ -37,7 +37,7 @@ nav a:hover {
 .hero {
     background-image: url(assets/header-background.svg);
     background-size: cover;
-    padding: 275px 0 255px;
+    padding: 275px 60px 255px;
 }
 
 h2 {
@@ -55,6 +55,8 @@ h2 {
     text-align: center;
     color: #2F6A49;
     background-color: #FFB6C4;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .about h3,
@@ -99,7 +101,7 @@ p.food_title {
     margin-bottom: 30px;
 }
 
-div.food_image {
+.food_image {
     float: left;
     width: 50%;
     background-image: url(assets/blue-bowl.jpg);
@@ -190,4 +192,64 @@ footer img {
 footer p {
     float: right;
     margin-top: 5px;
+}
+
+@media (max-width: 830px) {
+
+    .hero h2 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .hero h2,
+    .about h3 {
+        font-size: 30px;
+    }
+
+    .about p,
+    .food p,
+    .findus,
+    .logos {
+        font-size: 16px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .images img,
+    .findus div {
+        width: 50%;
+    }
+
+    .logos img {
+        display: block;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .food {
+        /* display: block; */
+        /* overflow: auto; */
+    }
+
+    .food_info,
+    .food_image {
+        /* float: none; */
+        /* width: 100%; */
+    }
+
+    .food_info {
+        /* padding: 25px; */
+    }
+
+    .food_image {
+        /* height: 200px; */
+    }
+
+
 }
