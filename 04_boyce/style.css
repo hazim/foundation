@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
+    padding-top: 104px;
     font-family: "Work Sans";
     font-optical-sizing: auto;
     font-size: 16px;
@@ -9,12 +10,94 @@ body {
     color: #fff;
 }
 
+header {
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* although we have set overflow to hidden, but by adding position: fixed the content shrunk. So now we have to explicitly define the width to 100% */
+    width: 100%;
+    padding: 20px;
+    /* using flex instead of floats */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    /* float: left; */
+    width: 64px;
+}
+
+.top-nav {
+    /* float: right; */
+    /* padding-top: 22px; */
+}
+
 a {
     color: #fff;
     text-decoration: none;
+    margin-left: 10px;
+}
+
+a:hover {
+    border-bottom: solid 2px white;
+    padding-bottom: 3px;
+}
+
+.selected {
+    border-bottom: solid 2px white;
+    padding-bottom: 3px;
+}
+
+.photos {
+    /* since we are switching to using flex box we will align content differently */
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    /* otherwise all the content will be squeezed onto a single line */
+    align-items: flex-end;
+    /* so the items rest on the baseline */
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.photo {
+    /* since we are switching to using flex box we will align content differently */
+    /* display: inline-block; */
+    width: 300px;
+    margin: 10px;
+    /* vertical-align: bottom; */
+}
+
+.sml {
+    width: 250px;
+}
+
+.lrg {
+    width: 400px;
 }
 
 h2 {
     font-size: 48px;
     line-height: 1.2;
+}
+
+footer {
+    overflow: hidden;
+    padding: 20px;
+}
+
+footer p {
+    float: left;
+}
+
+footer .bottom-nav {
+    float: right;
+}
+
+footer .bottom-nav a {
+    width: 16px;
+    /* margin-left: 5px; */
+    display: inline-block;
 }
