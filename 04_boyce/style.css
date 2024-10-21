@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 h1 {
@@ -38,16 +39,18 @@ a {
     color: #fff;
     text-decoration: none;
     margin-left: 10px;
+    padding-bottom: 3px;
+    border-bottom: solid 3px rgba(0, 0, 0, 0);
+    transition: border 0.3s;
 }
 
 a:hover {
-    border-bottom: solid 2px white;
-    padding-bottom: 3px;
+    border-color: #555;
 }
 
-.selected {
-    border-bottom: solid 2px white;
-    padding-bottom: 3px;
+a.selected {
+    border-color: white;
+
 }
 
 .photos {
@@ -56,10 +59,13 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     /* otherwise all the content will be squeezed onto a single line */
-    align-items: flex-start;
+    align-items: flex-end;
+    justify-content: center;
     /* so the items rest on the baseline */
     max-width: 1080px;
     margin: 0 auto;
+
+    padding: 0 10px;
 }
 
 .overlay {
@@ -104,23 +110,24 @@ a:hover {
     line-height: 1.2;
 }
 
-
-
 footer {
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
 
 footer p {
-    float: left;
+    /* float: left; */
 }
 
 footer .bottom-nav {
-    float: right;
+    /* float: right; */
 }
 
 footer .bottom-nav a {
-    width: 16px;
+    width: 20px;
     /* margin-left: 5px; */
     display: inline-block;
 }
