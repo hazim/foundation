@@ -1,0 +1,20 @@
+Background: #eeeeee
+Text color: #203a8f
+
+Font: Montserrat
+
+Navigation font size: 24px at 1.5 line height
+Hover font size: 32px at 1.2 line height
+
+Copy:
+
+moon
+nebula
+tornado
+galaxy
+city at night
+cosmic
+earth
+astronaut
+international space station
+aurora borealis
