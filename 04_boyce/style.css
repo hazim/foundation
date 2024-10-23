@@ -30,25 +30,20 @@ h1 {
     width: 64px;
 }
 
-.top-nav {
-    /* float: right; */
-    /* padding-top: 22px; */
-}
-
-a {
+nav a {
     color: #fff;
     text-decoration: none;
     margin-left: 10px;
     padding-bottom: 3px;
     border-bottom: solid 3px rgba(0, 0, 0, 0);
-    transition: border 0.3s;
+    transition: border 0.3s ease-in;
 }
 
-a:hover {
+nav a:hover {
     border-color: #555;
 }
 
-a.selected {
+nav a.selected {
     border-color: white;
 
 }
@@ -79,6 +74,7 @@ a.selected {
     opacity: 0;
 
     transition: opacity 0.3s;
+    z-index: 2;
 }
 
 .photo {
@@ -89,6 +85,15 @@ a.selected {
     position: relative;
     /* vertical-align: bottom; */
 }
+
+.photo img {
+    transition: filter 0.3s;
+}
+
+.photo:hover img {
+    filter: grayscale(100%);
+}
+
 
 .photo:hover .overlay {
     opacity: 1;
@@ -118,16 +123,52 @@ footer {
     padding: 20px;
 }
 
-footer p {
-    /* float: left; */
-}
-
-footer .bottom-nav {
-    /* float: right; */
-}
-
 footer .bottom-nav a {
     width: 20px;
     /* margin-left: 5px; */
     display: inline-block;
+}
+
+
+/*
+----------------
+The list page
+----------------
+*/
+.list {
+    max-width: 640px;
+    margin: 120px auto;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.list a img {
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    /* max-height: 500px; */
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.list a:hover img {
+    opacity: 1;
+}
+
+.list a::after {
+    content: " /";
+}
+
+.list a:last-child::after {
+    content: "";
 }
