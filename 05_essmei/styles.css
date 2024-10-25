@@ -48,8 +48,76 @@ a {
     padding: 110px 0 120px;
     background-size: cover;
     background-position: right center;
+    margin-bottom: 30px;
 }
 
 .intro {
     max-width: 440px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+}
+
+.filters a:hover {
+    /* font-weight: 700; */
+    border-bottom: solid 3px #FEEA34;
+}
+
+nav a.selected {
+    font-weight: 700;
+    border-bottom: solid 3px #FEEA34;
+}
+
+
+
+.products .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products {
+    margin-bottom: 40px;
+}
+
+.product {
+    width: 33.333%;
+    /* margin: 0 10px 10px 0; */
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(254, 234, 52, 0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 15px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay h4,
+.overlay p {
+    font-weight: 700;
+}
+
+.overlay h4 {
+    font-size: 18px;
+}
+
+.overlay p {
+    font-size: 36px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
 }
