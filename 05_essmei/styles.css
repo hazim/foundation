@@ -209,3 +209,9 @@ nav a.selected {
         display: none;
     }
 }
+
+@media (min-width: 540px) {
+    .filters-list {
+        display: block !important;
+    }
+}
