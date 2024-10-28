@@ -97,11 +97,14 @@ Store
 }
 
 .show-filters {
-    display: none;
+    color: #bfbfb7;
+    text-decoration: none;
+    /* display: none; */
 }
 
 .filter-list {
     display: flex;
+    margin-top: 10px;
     margin-bottom: 26px;
 }
 
