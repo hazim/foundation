@@ -16,3 +16,21 @@ $('.show-filters').on('click', function () {
 
     return false;
 })
+
+$('.filter-list a').on('click', function () {
+
+    // 1. we want to extract the keyword in order for our filter to work
+    // console.log($(this).attr('data-filter'));
+    let filter = $(this).attr('data-filter');
+
+    // 2. we want to query for the keyword that we extracted
+    // a. make all the products disappear in order to reset what we can see. CSS display on .product set to none.
+    // b. make only the filtered ones appear.
+    $('.product').hide();
+    $(filter).show();
+
+    $('.filter-list a').removeClass('selected');
+    $(this).addClass('selected');
+
+    return false;
+})
