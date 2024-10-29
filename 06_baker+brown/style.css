@@ -22,7 +22,7 @@ header {
     top: 0;
     left: 0;
 
-    /* transform: translateX(-100%); */
+    transform: translateX(-100%);
 }
 
 nav {
@@ -48,18 +48,63 @@ nav a {
 
 }
 
-.natural {
+.natural,
+.collection {
     padding-right: 260px;
     position: relative;
 }
 
-.natural h2 {
+h2 {
     font-size: 64px;
     line-height: 1.125;
     font-weight: 700;
+}
+
+.natural h2,
+.collection h3 {
     position: absolute;
     right: 0;
     top: 50%;
     width: 360px;
     transform: translateY(-50%);
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.one-thing {
+    padding-left: 350px;
+    position: relative;
+}
+
+.one-thing .copy {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 460px;
+}
+
+h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.copy p {
+    font-size: 31px;
+    font-weight: 200;
+}
+
+.lookbook h2 {
+    color: white;
+    text-align: center;
+    padding: 220px 0;
+    background-image: url(assets/image_3.jpg);
+    background-size: cover;
+}
+
+.collection h3 {
+    font-size: 48px;
+    line-height: 1.125;
+    font-weight: 600;
 }
