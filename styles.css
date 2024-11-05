@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap');
 
+@font-face {
+    font-family: 'Departure Mono';
+    src: url(assets/DepartureMono-Regular.woff2) format('woff2');
+}
+
 /*
 
     // <weight>: Use a value from 100 to 800
@@ -32,12 +37,35 @@
 }
 */
 
+
+section.about {}
+
+section.about p {
+    font-family: 'Departure Mono';
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    font-weight: 100;
+    color: #444444;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 30px;
+    padding: 30px;
+}
+
+section.about p::selection {
+    background-color: yellow;
+    color: green;
+}
+
 body {
     background-color: #101920;
     color: #92673C;
     font-family: "IBM Plex Sans";
+    -webkit-font-smoothing: antialiased;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
     padding: 0;
     margin: 0;
     /* box-sizing: content-box; */
@@ -45,7 +73,7 @@ body {
 
 header {
     padding: 50px 0 40px;
-    background-image: url(original-GAPA3AJBTNAL3QKU6IOO.png);
+    background-image: url(assets/original-GAPA3AJBTNAL3QKU6IOO.png);
     background-size: cover;
     width: 100%;
     margin-bottom: 50px;
@@ -82,7 +110,7 @@ ul {
 a {
     text-decoration: none;
     color: white;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 a:hover {
@@ -92,6 +120,7 @@ a:hover {
 
 li {
     font-family: "Martian Mono";
+    -webkit-font-smoothing: antialiased;
     margin-bottom: 13px;
     text-transform: capitalize;
 }
