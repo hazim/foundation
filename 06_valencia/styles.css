@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "HK Grotesk";
+    src: url(assets/hkgrotesk-semibold-webfont.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: "HK Grotesk bold";
+    src: url(assets/hkgrotesk-bold-webfont.woff2) format('woff2');
+}
+
+body {
+    background-color: #ecc7ab;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 50px;
+}
+
+header a {
+    font-family: "HK Grotesk";
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    z-index: 2;
+    position: fixed;
+}
+
+.eye-icon {
+    width: 28px;
+    margin-right: 12px;
+}
+
+
+
+/* --------------------------------
+The Menu section of the page
+-------------------------------- */
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 820px;
+    height: 100vh;
+    background-color: #FFD363;
+    padding: 45px 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    text-align: right;
+}
+
+.menu a {
+    font-family: "HK Grotesk";
+    text-decoration: none;
+    color: #fff;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    font-size: 120px;
+}
+
+.menu .social {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+
+/* --------------------------------
+Components that are being reused throughout the site
+-------------------------------- */
+
+section {
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.circle,
+.square {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.circle {
+    background-color: #D9A724;
+    border-radius: 50%;
+}
+
+.square {
+    background-color: #738DA0;
+}
+
+h2 {
+    font-family: "HK Grotesk";
+    -webkit-font-smoothing: antialiased;
+    font-size: 120px;
+    line-height: 0.9;
+    max-width: 600px;
+}
+
+/* --------------------------------
+The first section
+-------------------------------- */
+
+.natural {
+    width: 880px;
+    margin-bottom: 195px;
+}
+
+.natural img {
+    width: 430px;
+    transition: transform 0.5s ease;
+}
+
+.natural:hover img {
+    transform: rotate(-5deg);
+}
+
+.natural h2 {
+    position: absolute;
+    left: 327px;
+    transition: transform 0.5s ease;
+}
+
+.natural:hover h2 {
+    transform: scale(1.1);
+}
+
+.natural .circle {
+    top: 60px;
+    left: 0;
+    transform: translate(-50%);
+}
+
+.natural .square {
+    left: 200px;
+    bottom: 0;
+    transform: translateY(50%);
+}
+
+/* --------------------------------
+The second section
+-------------------------------- */
+
+.doing {
+    width: 1100px;
+    margin-bottom: 240px;
+    justify-content: flex-end;
+}
+
+.doing img {
+    width: 600px;
+    transition: transform 0.5s ease;
+}
+
+.doing:hover img {
+    transform: rotate(5deg);
+}
+
+.doing .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: transform 0.5s ease;
+}
+
+.doing:hover .content {
+    transform: translateY(-50%);
+}
+
+.doing h2 {
+    margin-bottom: 50px;
+}
+
+.doing p {
+    font-family: "HK Grotesk";
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.doing .circle {
+    top: 120px;
+    right: 550px;
+}
+
+.doing .square {
+    bottom: 120px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+/* --------------------------------
+The third Lookbooks section
+-------------------------------- */
+
+.lookbook {
+    width: 100%;
+    height: 600px;
+    background-image: url(assets/image_3.jpeg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 240px;
+    text-align: center;
+}
+
+.lookbook h2 {
+    margin: 0 auto;
+    transition: all 0.5s ease;
+}
+
+.lookbook:hover h2 {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* --------------------------------
+The fourth section
+-------------------------------- */
+
+.spring {
+    text-align: center;
+    width: 900px;
+    flex-direction: column;
+    margin-bottom: 240px;
+}
+
+.spring img {
+    width: 900px;
+}
+
+.spring h2 {
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+.spring:hover h2 {
+    transform: scale(0.9);
+    opacity: 0.8;
+    transform: translateY(-140%);
+}
+
+.spring .circle {
+    top: 0;
+    right: 100px;
+    transform: translateY(-50%);
+}
+
+.spring .square {
+    top: 250px;
+    left: -50px;
+    /* transform: translate(-50%, -50%); */
+}
+
+/* --------------------------------
+The footer
+-------------------------------- */
+
+footer {
+    background-image: url(assets/footer.svg);
+    background-size: cover;
+    background-position: top center;
+    /* padding: 100px; */
+    height: 470px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 80px;
+}
+
+.social {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    font-family: "HK Grotesk";
+    text-decoration: none;
+    color: #fff;
+    font-size: 60px;
+}
