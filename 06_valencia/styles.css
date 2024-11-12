@@ -21,6 +21,7 @@ header {
 }
 
 header a {
+    display: flex;
     font-family: "HK Grotesk";
     -webkit-font-smoothing: antialiased;
     font-size: 12px;
@@ -28,11 +29,23 @@ header a {
     color: #fff;
     z-index: 2;
     position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+.menu-toggle {
+    align-items: center;
 }
 
 .eye-icon {
     width: 28px;
     margin-right: 12px;
+    opacity: 0;
+    /* display: none; */
+}
+
+.revel {
+    opacity: 1;
 }
 
 
@@ -44,7 +57,7 @@ The Menu section of the page
 .menu {
     position: fixed;
     top: 0;
-    right: 0;
+    right: -820px;
     width: 820px;
     height: 100vh;
     background-color: #FFD363;
@@ -53,6 +66,11 @@ The Menu section of the page
     flex-direction: column;
     z-index: 1;
     text-align: right;
+    transition: transform 0.5s ease;
+}
+
+.show {
+    transform: translateX(-100%);
 }
 
 .menu a {
@@ -200,7 +218,8 @@ The second section
 
 .doing .circle {
     top: 120px;
-    right: 550px;
+    left: 500px;
+    transform: translateX(-50%);
 }
 
 .doing .square {
@@ -298,4 +317,102 @@ footer a {
     text-decoration: none;
     color: #fff;
     font-size: 60px;
+}
+
+@media (max-width: 1260px) {
+    body {
+        background-color: red;
+    }
+
+    .circle,
+    .square {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer a {
+        font-size: 40px;
+    }
+
+    .social {
+        justify-content: space-around;
+    }
+
+}
+
+@media (max-width: 960px) {
+    body {
+        background-color: green;
+    }
+
+    header {
+        padding: 40px;
+        margin-bottom: 50px;
+
+    }
+
+    section {
+        display: block;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .natural,
+    .doing,
+    .lookbook,
+    .spring {
+        margin-bottom: 100px;
+    }
+
+    .natural img,
+    .doing img {
+        width: 100%;
+    }
+
+    .natural:hover img,
+    .doing:hover img {
+        transform: none;
+    }
+
+    h2 {
+        max-width: initial;
+        font-size: 60px;
+    }
+
+    .natural h2,
+    .doing .content,
+    .lookbook h2,
+    .spring h2 {
+        left: 0;
+        position: relative;
+        transform: none;
+    }
+
+    .natural:hover h2,
+    .doing:hover .content,
+    .lookbook:hover h2,
+    .spring:hover h2 {
+        transform: none;
+    }
+
+    .circle,
+    .square {
+        display: none;
+    }
+
+    .menu .pages {
+        font-size: 40px;
+    }
+
+    footer a {
+        font-size: 40px;
+
+    }
+
+    .social {
+        padding: 0 40px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+    }
 }
