@@ -321,7 +321,7 @@ footer a {
 
 @media (max-width: 1260px) {
     body {
-        background-color: red;
+        /* background-color: red; */
     }
 
     .circle,
@@ -342,7 +342,7 @@ footer a {
 
 @media (max-width: 960px) {
     body {
-        background-color: green;
+        /* background-color: green; */
     }
 
     header {
@@ -393,6 +393,11 @@ footer a {
     .lookbook:hover h2,
     .spring:hover h2 {
         transform: none;
+    }
+
+    .lookbook {
+        padding: 68px 0;
+        height: auto;
     }
 
     .circle,
