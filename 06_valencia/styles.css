@@ -184,6 +184,7 @@ The second section
     width: 1100px;
     margin-bottom: 240px;
     justify-content: flex-end;
+    max-width: 90%;
 }
 
 .doing img {
@@ -362,6 +363,7 @@ footer a {
     .lookbook,
     .spring {
         margin-bottom: 100px;
+        max-width: 100%;
     }
 
     .natural img,
