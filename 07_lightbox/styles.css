@@ -51,8 +51,22 @@ a.clicked {
 }
 
 .modal-close {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     color: white;
+    cursor: pointer;
+    padding: 20px 25px;
+}
+
+.modal-content {
+    position: fixed;
+    max-width: 760px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    display: none;
 }
